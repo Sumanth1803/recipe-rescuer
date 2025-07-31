@@ -8,35 +8,63 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Food-themed color palette */
+    --background: 35 20% 98%;
+    --foreground: 25 30% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 35 40% 97%;
+    --card-foreground: 25 30% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 35 40% 97%;
+    --popover-foreground: 25 30% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Warm cooking orange as primary */
+    --primary: 18 88% 55%;
+    --primary-foreground: 35 20% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Soft cream as secondary */
+    --secondary: 35 25% 92%;
+    --secondary-foreground: 25 30% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted earth tones */
+    --muted: 35 20% 90%;
+    --muted-foreground: 25 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Fresh herb green as accent */
+    --accent: 85 45% 55%;
+    --accent-foreground: 35 20% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 35 20% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 20% 85%;
+    --input: 35 20% 90%;
+    --ring: 18 88% 55%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+
+    /* Custom cooking theme colors */
+    --chef-orange: 18 88% 55%;
+    --herb-green: 85 45% 55%;
+    --tomato-red: 0 75% 55%;
+    --cream-beige: 35 25% 92%;
+    --golden-yellow: 45 90% 65%;
+    --warm-brown: 25 30% 35%;
+
+    /* Beautiful gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--chef-orange)), hsl(var(--golden-yellow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--chef-orange) / 0.9), hsl(var(--tomato-red) / 0.8));
+    --gradient-card: linear-gradient(180deg, hsl(var(--card)), hsl(var(--cream-beige)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--herb-green)), hsl(var(--accent)));
+
+    /* Elegant shadows with warm tones */
+    --shadow-soft: 0 4px 20px hsl(var(--chef-orange) / 0.15);
+    --shadow-medium: 0 8px 30px hsl(var(--chef-orange) / 0.2);
+    --shadow-strong: 0 12px 40px hsl(var(--chef-orange) / 0.25);
+
+    /* Smooth animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
